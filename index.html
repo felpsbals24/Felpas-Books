@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MangáShelf</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu" class="container__rotulo">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Gêneros</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Ação</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Aventura</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Romance</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Fantasia</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Terror</a>
+        </li>
+      </ul>
+      <img src="img/logomanga.png" height="50px" width="50px" alt="Logo da MangáShelf" class="container__imagem">
+      <h1 class="container__titulo"><b class="container__titulo--negrito">Mangá</b>Shelf</h1>
+
+      <ul class="opções">
+        <input type="checkbox" id="opções-menu" class="opções__botão" />
+        <label for="opções-menu" class="opções__rotulo">
+          <li class="opções__item">Gêneros</li>
+        </label>
+
+        <ul class="lista-menu">
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Ação</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Aventura</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Romance</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Fantasia</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Terror</a>
+          </li>
+        </ul>
+        <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+        <li class="opções__item"><a href="#" class="opções__link">Minha coleção</a></li>
+      </ul>
+
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos"
+          class="container__imagem container__imagem-transparente"></a>
+      <a href="#" class="container__link">
+        <img src="img/Compras.svg" alt="Carrinho de compras" class="container__imagem">
+        <p class="container__texto">Minha sacola</p>
+      </a>
+      <a href="#" class="container__link">
+        <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem">
+        <p class="container__texto">Meu perfil</p>
+      </a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Pronto para uma nova aventura?</h2>
+    <p class="banner__texto">Explore nossa coleção de mangás e comece sua jornada!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Novos lançamentos</h2>
+
+    <div class="carrossel__container">
+      <div class="swiper">
+        <div class="swiper-pagination"></div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/NovoManga1.png" class="imagem-com-borda" alt="Capa de mangá novo" width="20px" height="385px"></div> 
+          <div class="swiper-slide"><img src="img/NovoManga2.png" class="imagem-com-borda" alt="Capa de mangá novo"></div>
+          <div class="swiper-slide"><img src="img/NovoManga3.png" class="imagem-com-borda" alt="Capa de mangá novo" width="20px" height="385px"></div>
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+      </div>
+
+      <div class="card">
+        <div class="card__descrição">
+          <div class="descrição">
+            <h3 class="descrição__titulo">Você pode gostar de...</h3>
+            <h2 class="descrição__titulo-livro">Naruto: Volume 1</h2>
+            <p class="descrição__texto">
+              Naruto Uzumaki, um jovem ninja da Aldeia da Folha, é mais conhecido por suas travessuras do que por suas habilidades. Mas, por trás de sua personalidade extrovertida, esconde um grande sonho: tornar-se o Hokage, o líder mais poderoso de sua vila. Desprezado por muitos por um segredo obscuro, Naruto embarca em sua jornada ninja, repleta de desafios e aventuras, buscando o reconhecimento e o respeito que tanto almeja..
+            </p> 
+          </div>
+          <img src="img/Naruto1.png" class="imagem-com-borda2" width="500px" height="300px" class="descrição__imagem" />
+        </div>
+        <div class="card__botões">
+          <ul class="botões">
+            <li class="botões__item">
+              <img src="img/Favoritos.svg" alt="Favoritar mangá" />
+            </li>
+            <li class="botões__item">
+              <img src="img/Compras.svg" alt="Adicionar ao carrinho" />
+            </li>
+          </ul>
+          <a href="#" class="botões__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Mais vendidos</h2>
+
+    <div class="carrossel__container">
+      <div class="swiper">
+        <div class="swiper-pagination"></div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/CapaBersek.png" alt="Capa de Berserk"></div>
+          <div class="swiper-slide"><img src="img/OnePiece.png" alt="Capa de One Piece"></div>
+          <div class="swiper-slide"><img src="img/DragonBall.png" alt="Capa de Demon Slayer"></div>
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <div class="card">
+        <div class="card__descrição">
+          <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+          <h3 class="descrição__titulo">Autor em Destaque</h3>
+          <h2 class="descrição__titulo-livro">Hirohiko Araki</h2>
+          <p class="descrição__texto">Hirohiko Araki é um mangaká japonês, mais conhecido por sua obra-prima JoJo's Bizarre Adventure. Com um estilo visual marcante e narrativas extravagantes, Araki criou um universo único e cativou milhões de fãs ao redor do mundo.</p>
+        </div>
+        <img src="img/Araki.png" width="850px" height="500px" class="descrição__imagem">
+
+        <div class="card__botões">
+          <ul class="botões">
+            <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar autor"></li>
+            <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar ao carrinho"></li>
+          </ul>
+          <a href="#" class="botões__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">GENÊROS MAIS VISITADOS</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Shounen</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Seinen</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Isekai</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Mecha</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Fantasia</a></li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <div class="contato__descrição">
+      <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+      <p class="contato__texto">
+        Receba lançamentos e promoções de seus mangás favoritos.
+      </p>
+    </div>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Parceiros</h2>
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Comunidade Mangá</li>
+      <li class="lista-rodapé__item">
+        <img src="img/MangaOnline.png" width="50px" height="50px" alt="Parceiro 1" />
+        <a href="#" class="lista-rodapé__link">Mangá Online</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/MangasBr.png" width="50px" height="50px" alt="Parceiro 2" />
+        <a href="#" class="lista-rodapé__link">Mangás BR</a>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
+    });
+  </script>
+</body>
+
+</html>
